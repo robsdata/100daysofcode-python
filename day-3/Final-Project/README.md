@@ -35,4 +35,4 @@ Have a think about how you might write your program to make a player's answers l
 
 
 
-![flowchart](Final-Project\images\flowchart.PNG)
+![flowchart](.\images\flowchart.PNG)
