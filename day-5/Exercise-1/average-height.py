@@ -14,12 +14,14 @@ for n in range(0, len(student_heights)):
 
 #Write your code below this row 👇
 
-sum_heights = 0
+total_height = 0
+total_participants = 0
 
-for x in range(0, len(student_heights)):
-    sum_heights += student_heights[x]
+for height in student_heights:
+    total_height += height
+    total_participants += 1
 
-average_height = sum_heights / len(student_heights)
 
-print(f"The average is a total of: {average_height:.2f}")
+average = total_height / total_participants
 
+print(f"The average is {average:.0f}")
