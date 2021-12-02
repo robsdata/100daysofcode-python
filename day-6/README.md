@@ -1,23 +1,45 @@
-## Feedback
+# Day 6 - Python Functions & Karel
 
----
+## Overview
 
-Functionally, yes, they seem to be equivalent. I didn't notice anything that would make a different result. 
-But if we're talking about **computation and space complexity, only creating one list would be better**. And while this is for a beginner,  one pattern I might start getting in the habit of is this:
-Whenever you see yourself doing something like
+### Objective
+
+Code blocks and indentation functions and while loop
+
+### Project
+
+A code that's required to instruct our little robot to be able to complete any randomly generated maze.
+
+# Lesson Cheat Sheet
+
+## While Loop
+
+This is a loop that will keep repeating itself until the while condition becomes false.
+
+## Infinite Loops
+
+Sometimes, the condition you are checking to see if the loop should continue never becomes false. In this case, the loop will continue for eternity (or until your computer stops it). This is more common with while loops.
+
+## Creating Functions
+
+This is the basic syntax for a function in Python. It allows you to give a set of instructions a name, so  you can trigger it multiple times without having to re-write or copy-paste it. The contents of the function must be indented to signal that it's inside. 
 
 ```python
-password = ""
-for char in password_list:
-    password += char
+def my_function():
+	print("Hello")
+	name = input("Your name:")
+	print("Hello")
 ```
 
-Instead I would use something like this:
+## Calling Functions
+
+You activate the function by calling it. This is simply done by writing the name of the function followed by a set of round brackets. This allows you to determine when to trigger the function and how many times.
 
 ```python
-password = "".join(password_list)
+my_function()
+my_function()
+#The function my_function
+#will run twice.
 ```
 
-Behind the scenes, IIRC, joining something like this is faster than what would be needed to establish a variable and then add to it in a for loop.
-
-There are good patterns about the second one as well though. For one, **it is using indexing to get things, which is useful to fully understand when you get into algorithms**. Also, it starts its ranges at 0, which is more traditionally what you would see. In most cases, when programming, we will start at index 0 rather than index 1. **The variables in the for loops are a bit misleading though, since when you do `for x in range(number_of_letters)`, that x is always going to be a number.**
+[https://reeborg.ca/index_en.html](https://reeborg.ca/index_en.html)
