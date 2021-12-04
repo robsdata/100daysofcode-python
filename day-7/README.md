@@ -8,7 +8,9 @@
 
 # Lesson Cheat Sheet
 
+
 ## Flow Chart
+<img width="588" alt="flowchart" src="https://user-images.githubusercontent.com/62405434/144692615-52c150ca-5f2c-4f4d-8677-ef2a5f1f61a8.png">
 
 ## Python Lists
 
