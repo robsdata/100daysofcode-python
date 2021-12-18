@@ -8,11 +8,11 @@ def lifes_level_selection():
     if level == "hard":
         lifes = 5
         print(f"Assigning {lifes} lifes")
-        correct_level_selection = True
+        
     elif level == "easy":
         lifes = 10
         print(f"Assigning {lifes} lifes")
-        correct_level_selection = True
+        
     else:
         lifes_level_selection()
 
@@ -39,7 +39,7 @@ def guess_game(level_selection):
     
     should_continue = input("Should we continue playing (y/n)? \n").lower()
     if should_continue == "y":
-        guess_game(level_selection)
+        return guess_game(level_selection)
     else:
         return print("Good bye!")
 
