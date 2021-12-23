@@ -1,0 +1,21 @@
+​What would you like? (espresso/latte/cappuccino): espresso
+Please insert coins.
+how many quarters?: 8
+how many dimes?: 8
+how many nickles?: 8
+how many pennies?: 8
+Here is $1.78 in change.
+Here is your espresso ☕️. Enjoy!
+​What would you like? (espresso/latte/cappuccino): latte
+Please insert coins.
+how many quarters?: 0
+how many dimes?: 0
+how many nickles?: 0
+how many pennies?: 1
+Sorry that's not enough money. Money refunded.
+​What would you like? (espresso/latte/cappuccino): capuccino
+Traceback (most recent call last):
+  File "main.py", line 86, in <module>
+    drink = MENU[choice]
+KeyError: 'capuccino'
+ 
